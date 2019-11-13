@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Monda-Reg;
+    src: url('../fonts/Monda-Regular.ttf');
+}
+
+/*  */
+:root {
+    --blue: #008aff;
+    --black: #3f3d56;
+    --grey: #ebebee;
+}
