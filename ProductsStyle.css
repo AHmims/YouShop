@@ -1,0 +1,143 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --blue: #008aff;
+}
+
+/*  */
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*  */
+#Container {
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+}
+
+/*  */
+#navContainer {
+    background-color: var(--black);
+    height: 70px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 25px max-content max-content auto max-content 25px;
+    grid-template-rows: auto max-content max-content max-content auto;
+    grid-column-gap: 25px;
+}
+
+#logoLink {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+
+#logo {
+    width: 200px;
+}
+
+#list {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.links {
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.links a:hover {
+    color: var(--blue);
+}
+
+/*  */
+#SignBtnContainer {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    /*  */
+}
+
+#SignBtn {
+    border: 1px solid #008aff;
+    background: none;
+    font-size: 20px;
+    height: 56px;
+    padding: 10px 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    color: var(--white);
+    font-weight: bold;
+    /*  */
+    transition: 0.8s;
+}
+
+#SignBtn:hover {
+    color: var(--blue);
+}
+
+/*  */
+/*  */
+#mainContainer {
+    display: grid;
+    grid-template-columns: auto max-content auto;
+}
+
+#innerContainer {
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+}
+
+.Products {
+    /* background-color: red; */
+    display: inline-block;
+    /*  */
+    margin: 25px 20px;
+    width: 500px;
+    height: 300px;
+    /*  */
+    background-size: cover;
+    background-position: center;
+    /*  */
+    border-radius: 5px;
+}
+
+.innerText {
+    margin-top: 280px;
+    margin-left: 5px;
+}
+
+#img1 {
+    background-image: url('./res/img/cap.jpg');
+}
+
+#img2 {
+    background-image: url('./res/img/Hoodie.jpg');
+}
+
+#img3 {
+    background-image: url('./res/img/Hoodie2.jpg');
+}
+
+#img4 {
+    background-image: url('./res/img/Longline.jpg');
+}
+
+#img5 {
+    background-image: url('./res/img/phoneCase.jpg');
+}
+
+#img6 {
+    background-image: url('./res/img/shirt2.jpg');
+}
