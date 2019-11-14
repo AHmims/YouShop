@@ -19,7 +19,7 @@ body {
     transform: translate(-150%, 50%);
     box-sizing: border-box;
     padding: 70px 30px;
-    margin-bottom:100px ;
+    margin-bottom: 100px;
 }
 
 .avatar {
@@ -81,4 +81,5 @@ h1 {
 
 .loginbox a:hover {
 
-    color: #008aff ;
+    color: #008aff;
+}
