@@ -13,12 +13,13 @@ nav {
     height: 70px;
     color: #f3eded;
     margin-top: 70px;
-    margin-left: 350px;
+    margin-left: 300px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 35px;
     float: center;
     background-color: #008aff;
     line-height: 70px;
+    border-radius: 5px;
 }
 
 body {
