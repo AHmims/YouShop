@@ -8,6 +8,18 @@ nav {
     height: 70px;
     background-color: #000000 ;
 }
+.block {
+    width: 60%;
+    height: 70px;
+    color: #f3eded;
+    margin-top: 70px;
+    margin-left: 350px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    float: center;
+    background-color: #008aff;
+    line-height: 70px;
+}
 
 body {
     background-image: url("lines-of-code-2653362.jpg");
@@ -78,5 +90,22 @@ ul li a:hover {
 }
 .img {
     width: 800px;
-    margin: 0 auto;
+    margin: 100px auto;
+    position: center;
+    margin-left: 350px;
+    background: url("tshirt.jpg");
+    box-shadow: 1px 2px 10px 5px white;
+    transition-delay: 0,8ms;
+    animation: slide 20s infinite;
+}
+@keyframes slide {
+    25% {
+        background: url("tshirt.jpg");
+    }
+    50% {
+        background: url("Hoodie.jpg");
+    }
+    75% {
+        background: url("hoodie2.jpg");
+    }
 }
