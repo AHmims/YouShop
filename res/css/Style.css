@@ -87,21 +87,6 @@ ul li a:hover {
     color: #008aff;
 }
 
-.btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: #008aff;
-    z-index: -1;
-    transition: 0.8s;
-}
-
-.btn:hover::before {
-    height: 180%;
-}
-
 .img {
     width: 800px;
     height: 450px;
