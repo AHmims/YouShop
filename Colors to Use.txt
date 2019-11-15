@@ -1,3 +1,0 @@
-Blue : #008aff
-White : #FFFFFF
-Black : #000000
