@@ -2,12 +2,12 @@
 
 <head>
     <title>Connexion | YOUSHOP</title>
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
 </head>
 
 <body>
     <div class="loginbox">
-        <img src="login.png" width="50px" height="50px" class="avatar">
+        <img src="../icons/login.png" width="50px" height="50px" class="avatar">
         <H1>Connexion</H1>
         <form>
             <p>Nom d'utilisateur</p>
@@ -17,7 +17,7 @@
             <i id="pShow"></i>
             <input type="submit" name="" value="LOGIN" class="login"><br><br>
             <a href="#"> Mot de passe oublié? </a><br>
-            <a href="file:///C:/Users/Admin/Desktop/YOUSHOP/YouShop/sign-up.html#"> Tu n'as pas un compte? </a>
+            <a href="sign-up.html"> Tu n'as pas un compte? </a>
 
         </form>
     </div>
@@ -28,11 +28,11 @@
         btn.addEventListener('click', () => {
             if (!state) {
                 state = true;
-                btn.style = "background-image:url('./res/icons/eye-Show.png')";
+                btn.style = "background-image:url('../icons/eye-Show.png')";
                 input.setAttribute('type', 'text');
             } else {
                 state = false;
-                btn.style = "background-image:url('./res/icons/eye-Hide.png')";
+                btn.style = "background-image:url('../icons/eye-Hide.png')";
                 input.setAttribute('type', 'password');
             }
         });

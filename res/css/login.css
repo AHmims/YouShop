@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(lines-of-code-2653362.jpg);
+    background-image: url('../img/lines-of-code-2653362.jpg');
     background-repeat: no-repeat;
     /* background-color:black; */
     background-size: cover;
@@ -71,7 +71,7 @@ h1 {
     display: inline-block;
     margin-bottom: -17Px;
     cursor: pointer;
-    background-image: url('./res/icons/eye-Hide.png');
+    background-image: url('../icons/eye-Hide.png');
     background-size: 30px;
     background-position: center;
     background-repeat: no-repeat;
