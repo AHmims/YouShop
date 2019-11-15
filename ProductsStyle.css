@@ -14,7 +14,7 @@ body {
 /*  */
 #Container {
     display: grid;
-    grid-template-rows: max-content max-content max-content;
+    grid-template-rows: max-content max-content auto max-content;
 }
 
 /*  */
