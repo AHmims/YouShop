@@ -30,7 +30,10 @@
     <div class="block">
         <p>Ces Produits sont créés par des étudiants YouCode!</p>
     </div>
-    <img class="img" src="./res/img/bg-tshirt.jpg" id="bgImage">
+    <div class="img" id="bgImage">
+
+    </div>
+    <!-- <img class="img" src="./res/img/bg-tshirt.jpg" id="bgImage"> -->
     <!--  -->
     <div id="footer-wrapper">
         <div class="Container"></div>
@@ -39,10 +42,10 @@
                 <a href="https://www.facebook.com/YouCodeSchool/" target="_blank">
                     <img class="faCont" src="res/icons/facebook-xxl.png" alt="fb">
                 </a>
-                <a href="https://twitter.com/YouCode18">
+                <a href="https://twitter.com/YouCode18" target="_blank">
                     <img class="faCont" src="res/icons/twitter-xxl.png" alt="tw">
                 </a>
-                <a href="https://www.instagram.com/_youcode_/">
+                <a href="https://www.instagram.com/_youcode_/" target="_blank">
                     <img class="faCont" src="res/icons/instagram-xxl.png" alt="INS">
                 </a>
                 <img class="faCont" src="res/icons/linkedin-6-xl.png" alt="ld">
@@ -70,7 +73,7 @@
         var images = ["./res/img/bg-shirt-3.jpg", "./res/img/bg-tshirt-2.jpg", "./res/img/bg-tshirt.jpg"];
         var i = 0;
         setInterval(() => {
-            img.setAttribute('src', images[i]);
+            img.setAttribute('style', "background-image:url('" + images[i] + "');");
             if (i < 2)
                 i++;
             else
