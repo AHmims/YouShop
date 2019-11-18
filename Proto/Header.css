@@ -1,0 +1,69 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/*  */
+/*  */
+/* Page Elements */
+#mainContainer {}
+
+#navConatiner {
+    height: 70px;
+    padding: 10px;
+    background-color: black;
+    box-sizing: border-box;
+    /*  */
+    display: flex;
+    align-items: center;
+}
+
+#YS-Logo {
+    height: 50px;
+}
+
+#navBar {
+    display: inline-block;
+}
+
+.navBarItems {
+    list-style: none;
+    display: inline-block;
+}
+
+.navBarLinks {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin-right: 30px;
+}
+
+.navBarLinks:hover {
+    color: #008aff;
+}
+
+#loginBtnContainer {
+    height: fit-content;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid #008aff;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#loginBtnContainer:hover {
+    background-color: #0088ff3d;
+}
+
+#loginButton {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}

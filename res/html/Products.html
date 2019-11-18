@@ -3,68 +3,93 @@
 
 <head>
   <title>tous les produits-YouShop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="../css/Products.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <a href="#home">
-        <img src="../img/youShop-logo.png">
-      </a>
+  <div id="mainContainer">
+    <div id="navConatiner">
+      <img src="../img/youShop-logo.png" alt="YouShop" id="YS-Logo">
+      <nav id="navBar">
+        <ul>
+          <li class="navBarItems"><a class="navBarLinks" href="#home">Accueil</a></li>
+          <li class="navBarItems"><a class="navBarLinks" href="https://youcode.ma/">A propos</a></li>
+          <li class="navBarItems"><a class="navBarLinks" href="#home">Produits</a></li>
+          <li class="navBarItems"><a class="navBarLinks" href="#footer-wrapper">Contactez-Nous</a></li>
+        </ul>
+      </nav>
+      <div id="loginBtnContainer">
+        <a href="./login.html" id="loginBtnText">Inscrivez-vous</a>
+      </div>
     </div>
-    <ul>
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="https://youcode.ma/">A propos</a></li>
-      <li><a href="#home">Produits</a></li>
-      <li><a href="#home">Contactez-Nous</a></li>
-      <li><a href="#home">Inscrivez Vous</a></li>
-    </ul>
-  </nav>
-
-  <div class="gallery">
-
-    <a target="_blank" href="shirt.jpg">
-      <img src="../img/Longline.jpg" alt="shirt" width="600" height="1000">
-    </a>
-    <div class="desc">T-SHIRT<br>80DH</div>
-
+    <div id="contentContainer">
+      <div class="shopItems">
+        <div id="item01" class="itemsImg"></div>
+        <div class="itemsDesc">
+          <p class="itemsName">LongLine</p>
+          <p class="itemsPrice">80-MAD</p>
+        </div>
+      </div>
+      <div class="shopItems">
+        <div id="item02" class="itemsImg"></div>
+        <div class="itemsDesc">
+          <p class="itemsName">Hoodie</p>
+          <p class="itemsPrice">179-MAD</p>
+        </div>
+      </div>
+      <div class="shopItems">
+        <div id="item03" class="itemsImg"></div>
+        <div class="itemsDesc">
+          <p class="itemsName">Hoodie</p>
+          <p class="itemsPrice">250-MAD</p>
+        </div>
+      </div>
+      <div class="shopItems">
+        <div id="item04" class="itemsImg"></div>
+        <div class="itemsDesc">
+          <p class="itemsName">Phone Case</p>
+          <p class="itemsPrice">100-MAD</p>
+        </div>
+      </div>
+      <div class="shopItems">
+        <div id="item05" class="itemsImg"></div>
+        <div class="itemsDesc">
+          <p class="itemsName">Shirt</p>
+          <p class="itemsPrice">60-MAD</p>
+        </div>
+      </div>
+      <div class="shopItems">
+        <div id="item06" class="itemsImg"></div>
+        <div class="itemsDesc">
+          <p class="itemsName">Cap</p>
+          <p class="itemsPrice">40-MAD</p>
+        </div>
+      </div>
+    </div>
+    <div id="footerContainer">
+      <div id="footerIconsContainer">
+        <a href="https://www.facebook.com/YouCodeSchool/" target="_blank">
+          <img class="footerIcons" src="../icons/facebook-xxl.png" alt="fb">
+        </a>
+        <a href="https://twitter.com/YouCode18" target="_blank">
+          <img class="footerIcons" src="../icons/twitter-xxl.png" alt="tw">
+        </a>
+        <a href="https://www.instagram.com/_youcode_/" target="_blank">
+          <img class="footerIcons" src="../icons/instagram-xxl.png" alt="INS">
+        </a>
+        <img class="footerIcons" src="../icons/linkedin-6-xl.png" alt="ld">
+        <img class="footerIcons" src="../icons/visa.png" alt="VS">
+        <img class="footerIcons" src="../icons/paaaypal.png" alt="PP">
+        <img class="footerIcons" src="../icons/master card.png" alt="MC">
+      </div>
+      <div id="footerTextContainer">
+        <p id="footerText"> CGU &nbsp; &nbsp; CGV &nbsp; &nbsp; Cookies &nbsp; &nbsp; Mentions légales &nbsp; &nbsp;
+          Politique de
+          protection des données</p>
+      </div>
+    </div>
   </div>
-
-  <div class="gallery">
-    <a target="_blank" href="shirt2.jpg">
-      <img src="../img/shirt2.jpg" alt="shirt2" width="600" height="1000">
-    </a>
-    <div class="desc">T-SHIRT<br>80DH</div>
-  </div>
-
-  <div class="gallery">
-    <a target="_blank" href="hoodie.jpg">
-      <img src="../img/hoodie.jpg" alt="hoodie" width="600" height="1000">
-    </a>
-    <div class="desc">SWEAT A CAPUCHE<br>250DH</div>
-  </div>
-
-
-
-  <div class="gallery">
-    <a target="_blank" href="hoodie2.jpg">
-      <img src="../img/hoodie2.jpg" alt="hoodie2" width="600" height="1000">
-    </a>
-    <div class="desc">SWEAT A CAPUCHE<br>280DH</div>
-  </div>
-  <div class="gallery">
-    <a target="_blank" href="cap.jpg">
-      <img src="../img/cap.jpg" alt="cap" width="600" height="1000">
-    </a>
-    <div class="desc">CASQUETTE<br>60DH</div>
-  </div>
-  <div class="gallery">
-    <a target="_blank" href="case.jpg">
-      <img src="../img/phoneCase.jpg" alt="case" width="600" height="1000">
-    </a>
-    <div class="desc">COQUE DE TELEPHONE<br>20DH</div>
-
 </body>
 
 </html>

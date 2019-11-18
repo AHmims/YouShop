@@ -1,107 +1,241 @@
-.logo img {
-    position: absolute;
-    margin-top: 0px;
-    margin-left: 10px;
-    width: 200px;
-}
-
-ul {
-    margin-left: 300px;
-    margin-top: 0px;
-}
-
-ul li {
-    list-style: none;
-    display: inline-block;
-    float: left;
-    line-height: 70px;
-}
-
-ul li a {
-    display: block;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #f3eded;
-    padding: 0 20px;
-}
-
-ul li a:hover {
-    color: #008aff;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 body {
-    /* background-image: url("k7el.jpg"); */
-    background-color: black;
-
-    background-repeat: repeat-x;
-
+    background-color: white;
 }
 
-body nav {}
-
-div.gallery {
-    margin-top: 65px;
-    margin-right: 25px;
-    border: 1px solid #ccc;
-    float: right;
-    width: 25%;
-    height: 400px;
-
-    position: relative;
-    right: 10px;
-    bottom: -30px;
-    top: 15px;
-
-
-}
-
-div.gallery img {
+/*  */
+/*  */
+/* Page Elements */
+#mainContainer {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-div.desc {
-    padding: 20px;
-    text-align: center;
-    color: #0000CD;
+/* NAV BAR */
+
+#navConatiner {
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    box-sizing: border-box;
+    /*  */
+    display: flex;
+    align-items: center;
+}
+
+#YS-Logo {
+    height: 50px;
+}
+
+#navBar {
+    display: inline-block;
+}
+
+.navBarItems {
+    list-style: none;
+    display: inline-block;
+}
+
+.navBarLinks {
+    text-decoration: none;
+    font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-bottom: 0px;
+    color: white;
+    margin-right: 30px;
+}
+
+.navBarLinks:hover {
+    color: #008aff;
+}
+
+#loginBtnContainer {
+    height: fit-content;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid #008aff;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#loginBtnContainer:hover {
+    background-color: #0088ff3d;
+}
+
+#loginBtnText {
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content */
+
+#contentContainer {
+    background-color: #f7f7f7;
+    /* background-image: url('../img/lines-of-code-2653362-min_50.jpg'); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    /*  */
+    padding: 2.5%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopItems {
+    /* background-color: rgb(255, 74, 74); */
+    width: 30%;
+    height: 50%;
+    /*  */
+    margin: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*  */
+    overflow: hidden;
+}
+
+.itemsImg {
+    background-color: #cecece;
+    width: 100%;
+    height: 80%;
+    /*  */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    /*  */
+    cursor: pointer;
+    animation: showCase 4s linear infinite;
+    animation-play-state: paused;
+}
+
+.itemsImg:hover {
+    animation-play-state: running;
 }
 
 
+@keyframes showCase {
+    0% {
+        background-position: center;
+    }
 
+    25% {
+        background-position: top;
+    }
 
+    50% {
+        background-position: center;
+    }
 
-#product1 {
-    top: 80px;
-    right: 60px;
+    75% {
+        background-position: bottom;
+    }
+
+    100% {
+        background-position: center;
+    }
 }
 
-#product2 {
-    top: 80px;
-    left: 60px;
-    margin-left: 200px;
+.itemsDesc {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    /*  */
+    display: flex;
+    align-items: center;
 }
 
-#product3 {
-    top: 80px;
-    left: 500px;
+.itemsImg:hover+.itemsDesc {
+    border: 3px solid #008aff;
 }
 
-#product4 {
-    top: 300px;
-    right: 60px;
+/* This is why i used overflow hidden */
+.itemsName,
+.itemsPrice {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #202020;
 }
 
-#product5 {
-
-    top: 300px;
-    left: 60px;
-    margin-left: 200px;
+.itemsPrice {
+    margin-left: auto;
+    margin-right: 5%;
 }
 
-#product6 {
-    top: 300px;
-    left: 500px;
+.itemsName {
+    margin-left: 5%;
+    font-size: 18px;
+}
+
+/* Images */
+#item01 {
+    background-image: url('../img/Longline.jpg');
+}
+
+#item02 {
+    background-image: url('../img/Hoodie.jpg');
+}
+
+#item03 {
+    background-image: url('../img/Hoodie2.jpg');
+}
+
+#item04 {
+    background-image: url('../img/phoneCase.jpg');
+}
+
+#item05 {
+    background-image: url('../img/shirt2.jpg');
+}
+
+#item06 {
+    background-image: url('../img/cap.jpg');
+}
+
+/* END */
+/*  */
+
+/* FOOTER */
+#footerContainer {
+    background-color: black;
+    flex-grow: 1;
+    /*  */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerIconsContainer {
+    width: 9%;
+    text-align: center;
+}
+
+.footerIcons {
+    width: 1.25vw;
+    margin: 2px 5px;
+}
+
+#footerTextContainer {}
+
+#footerText {
+    margin: 0;
+    margin-top: 5px;
+    color: white;
+    font-family: sans-serif;
 }
